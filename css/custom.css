@@ -1,12 +1,15 @@
 body {
   font-family: 'Merriweather', serif;
-  font-weight: 300;
+}
+
+img {
+  max-width: 100%;
 }
 
 .feature-bg {
-  background: white;
+  /* if we use opacity property, it will fade all the elements inside, i.e. text */
+  background: rgba(255, 255, 255, 0.3);
   width: 100vw;
-  opacity: 0.3;
   border-radius: 10px;
 }
 
@@ -16,8 +19,49 @@ body {
   padding: 1.5rem;
 }
 
-@media screen and (min-width: 1000px) {
+.header_img {
+  min-height: 25vh;
+}
+
+.card {
+  margin-bottom: 20px; 
+}
+
+/* Welcome section */
+.card-text {
+  font-size: 1.2rem;
+}
+
+.title {
+  color: goldenrod;
+}
+
+/* Price list section */
+.list-group-item {
+  background: none;
+  color: #eee; 
+  font-size: 1.1em;  
+}
+
+@media screen and (min-width: 768px) {
   .feature-bg {
     width: 60vw;
+  }
+
+  span {
+    position: absolute; 
+    background:rgba(175, 169, 169, 0.6);
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
+    border-radius: 100%;
+    left: -40px;
+    margin-left: 50%;
+    top: -40px;
+    font-size: 1.8rem;
+  }
+
+  .card {
+    margin-bottom: 0; 
   }
 }
