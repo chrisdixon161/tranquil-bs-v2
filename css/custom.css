@@ -39,8 +39,18 @@ img {
 /* Price list section */
 .list-group-item {
   background: none;
-  color: #eee; 
   font-size: 1.1em;  
+}
+
+/* this media query is for small screen so we dont have to reset any changes in a larger media query */
+@media screen and (max-width: 768px) {
+  .title {
+    margin-top: 1em;
+  }
+  /* footer submit form button */
+  button {
+    margin-top: 1em; 
+  }
 }
 
 @media screen and (min-width: 768px) {
