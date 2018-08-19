@@ -42,6 +42,10 @@ img {
   font-size: 1.1em;  
 }
 
+a {
+  color: #212529;
+}
+
 /* this media query is for small screen so we dont have to reset any changes in a larger media query */
 @media screen and (max-width: 768px) {
   .title {
